@@ -10,7 +10,7 @@
       Your mail type is <% if (mailType == 'lettersStamped') {%> a stamped letter <%} 
       else if (mailType == 'lettersMetered') {%> a metered letter <%}
       else if (mailType == 'largeEnvelope') {%> a large envelope <%}
-      else {%> a first class package service <%}%>
+      else {%> a first class package service <%}%> and your weight is <%= weight %> ounces
    </h1>
    <p>
       Your total price is: <% if (mailType == 'package') { 
