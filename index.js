@@ -11,7 +11,7 @@ express()
   .set('views', path.join(__dirname, 'views'))
   .set('view engine', 'ejs')
   .get('/', (req, res) => res.render('pages/index'))
-  .post('/views/pages/calc_rates.ejs', (req, res) => {
+  .post('pages/calc_rates.ejs', (req, res) => {
     res.render('calc_rates.ejs', {weight: req.body.weight, mailType: req.body.mailType})
   })
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
